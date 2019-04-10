@@ -138,12 +138,32 @@ body {
   align-items: center;
   justify-content: center;
 }
+@media (max-width: 1100px) {
+  html,
+  body {
+    background-color: #fff;
+  }
+}
 .container {
   width: 1100px;
   min-height: 515px;
   background-color: #fff;
   display: flex;
   flex-flow: row;
+  box-shadow: 5px 10px 20px #000;
+}
+@media (max-width: 1100px) {
+  .container {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    height: 100vh;
+  }
+}
+@media (max-width: 700px) {
+  .container {
+    flex-flow: column;
+  }
 }
 .container h1,
 .container h2,
@@ -168,6 +188,11 @@ body {
   width: 50%;
   margin: 0 auto;
 }
+@media (max-width: 700px) {
+  .container section {
+    width: 100%;
+  }
+}
 .container a {
   color: #00b8fe;
 }
@@ -176,10 +201,14 @@ body {
   background-blend-mode: overlay;
   background-size: cover;
   background-position: center;
-  padding: 0 10px;
   display: flex;
   flex-flow: column;
   justify-content: space-between;
+}
+@media (max-width: 700px) {
+  .container .heroBlock {
+    min-height: 100vh;
+  }
 }
 .container .heroBlock h1,
 .container .heroBlock p {
@@ -195,12 +224,12 @@ body {
   text-decoration: none;
   color: white;
   padding: 10px;
-  border: 1px solid white;
+  border-bottom: 2px solid white;
 }
 .container .heroBlock header nav a:hover {
   transition-delay: 0.5ms;
-  background-color: #00b8fe;
-  color: #000;
+  border-bottom: 2px solid #00b8fe;
+  color: #00b8fe;
 }
 .container .heroBlock .bio {
   text-align: center;

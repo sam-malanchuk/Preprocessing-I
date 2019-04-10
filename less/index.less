@@ -68,6 +68,10 @@ html, body {
 	display: flex;
 	align-items: center;
 	justify-content: center;
+
+	@media (max-width:1100px) {
+		background-color: @container-color;
+	}
 }
 
 .container {
@@ -76,6 +80,18 @@ html, body {
 	background-color: @container-color;
 	display: flex;
 	flex-flow: row;
+	box-shadow: 5px 10px 20px #000;
+
+	@media (max-width:1100px) {
+		width: 100%;
+		position: absolute;
+		top: 0;
+		height: 100vh;
+	}
+
+	@media (max-width:700px) {
+		flex-flow: column;
+	}
 
 	h1, h2, h3, h4, h5, h6 {
 		font-family: 'Montserrat Alternates', sans-serif;
@@ -98,6 +114,10 @@ html, body {
 	section {
 		width: 50%;
 		margin: 0 auto;
+
+		@media (max-width:700px) {
+			width: 100%;
+		}
 	}
 
 	a {
@@ -109,10 +129,13 @@ html, body {
 		background-blend-mode: overlay;
 		background-size: cover;
 		background-position: center;
-		padding: 0 10px;
 		display: flex;
 		flex-flow: column;
 		justify-content: space-between;
+
+		@media (max-width:700px) {
+			min-height: 100vh;
+		}
 
 		h1, p {
 			color: @text-secondary;
@@ -128,13 +151,13 @@ html, body {
 				text-decoration: none;
 				color: white;
 				padding: 10px;
-				border: 1px solid white;
+				border-bottom: 2px solid white;
 			}
 
 			a:hover {
 				transition-delay: 0.5ms;
-				background-color: #00b8fe;
-				color: #000;
+				border-bottom: 2px solid @main-color;
+				color: @main-color;
 			}
 		}
 
