@@ -151,6 +151,7 @@ body {
 .container h5,
 .container h6 {
   font-family: 'Montserrat Alternates', sans-serif;
+  color: #000;
 }
 .container h1 {
   font-size: 2em;
@@ -163,11 +164,22 @@ body {
   line-height: 1.2em;
 }
 .container section {
-  width: 49%;
+  width: 50%;
   margin: 0 auto;
 }
 .container .heroImg {
-  background: #ffffff url("img_tree.png") no-repeat right top;
+  background-image: url("/img/hero.png"), linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+  background-blend-mode: overlay;
+  background-size: cover;
+  background-position: center;
+  padding: 0 10px;
+  display: flex;
+  flex-flow: column;
+  justify-content: space-between;
+}
+.container .heroImg h1,
+.container .heroImg p {
+  color: #fff;
 }
 .container .projects {
   padding: 10px;

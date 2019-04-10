@@ -57,6 +57,8 @@ table {
 
 @main-color: #00b8fe;
 @container-color: #fff;
+@text-main: #000;
+@text-secondary: #fff;
 
 // Main Styles
 
@@ -76,6 +78,7 @@ html, body {
 
 	h1, h2, h3, h4, h5, h6 {
 		font-family: 'Montserrat Alternates', sans-serif;
+		color: @text-main;
 	}
 
 	h1 {
@@ -92,12 +95,25 @@ html, body {
 	}
 
 	section {
-		width: 49%;
+		width: 50%;
 		margin: 0 auto;
 	}
 
 	.heroImg {
-		background: #ffffff url("img_tree.png") no-repeat right top;
+		background-image: url("/img/hero.png"), linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5));
+		background-blend-mode: overlay;
+		background-size: cover;
+		background-position: center;
+		padding: 0 10px;
+		display: flex;
+		flex-flow: column;
+		justify-content: space-between;
+
+		h1, p {
+			color: @text-secondary;
+		}
+		.bio {
+		}
 	}
 
 	.projects {
