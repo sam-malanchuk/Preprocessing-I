@@ -74,23 +74,32 @@ html, body {
 	}
 }
 
+.flex-row() {
+	display: flex;
+	flex-flow: row;
+}
+
 .container {
+	.flex-row;
 	width: 1100px;
 	min-height: 515px;
 	background-color: @container-color;
-	display: flex;
-	flex-flow: row;
 	box-shadow: 5px 10px 20px #000;
 
 	@media (max-width:1100px) {
 		width: 100%;
 		position: absolute;
 		top: 0;
-		height: 100vh;
+		height: auto;
 	}
 
-	@media (max-width:700px) {
+	@media (max-width:750px) {
 		flex-flow: column;
+		width: 500px;
+	}
+
+	@media (max-width:500px) {
+		width: 100%;
 	}
 
 	h1, h2, h3, h4, h5, h6 {
@@ -115,7 +124,7 @@ html, body {
 		width: 50%;
 		margin: 0 auto;
 
-		@media (max-width:700px) {
+		@media (max-width:750px) {
 			width: 100%;
 		}
 	}
@@ -133,7 +142,7 @@ html, body {
 		flex-flow: column;
 		justify-content: space-between;
 
-		@media (max-width:700px) {
+		@media (max-width:750px) {
 			min-height: 100vh;
 		}
 
@@ -143,8 +152,7 @@ html, body {
 
 		header nav {
 			margin: 10px;
-			display: flex;
-			flex-flow: row;
+			.flex-row;
 			justify-content: space-around;
 
 			a {
