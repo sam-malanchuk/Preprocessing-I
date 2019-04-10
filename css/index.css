@@ -1,1 +1,258 @@
-/* Compile your LESS file! */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/* Set every element's box-sizing to border-box */
+* {
+  box-sizing: border-box;
+}
+html,
+body {
+  height: 100%;
+  background-color: #00b8fe;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+@media (max-width: 1100px) {
+  html,
+  body {
+    background-color: #fff;
+  }
+}
+.container {
+  display: flex;
+  flex-flow: row;
+  width: 1100px;
+  min-height: 515px;
+  background-color: #fff;
+  box-shadow: 5px 10px 20px #000;
+}
+@media (max-width: 1100px) {
+  .container {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    height: auto;
+  }
+}
+@media (max-width: 750px) {
+  .container {
+    flex-flow: column;
+    width: 500px;
+  }
+}
+@media (max-width: 500px) {
+  .container {
+    width: 100%;
+  }
+}
+.container h1,
+.container h2,
+.container h3,
+.container h4,
+.container h5,
+.container h6 {
+  font-family: 'Montserrat Alternates', sans-serif;
+  color: #000;
+}
+.container h1 {
+  font-size: 1.5em;
+}
+.container h2 {
+  font-size: 1.3em;
+}
+.container p {
+  font-family: 'Tajawal', sans-serif;
+  line-height: 1.2em;
+}
+.container section {
+  width: 50%;
+  margin: 0 auto;
+}
+@media (max-width: 750px) {
+  .container section {
+    width: 100%;
+  }
+}
+.container a {
+  color: #00b8fe;
+}
+.container .heroBlock {
+  background-image: url("/img/hero.png"), linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+  background-blend-mode: overlay;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-flow: column;
+  justify-content: space-between;
+}
+@media (max-width: 750px) {
+  .container .heroBlock {
+    min-height: 100vh;
+  }
+}
+.container .heroBlock h1,
+.container .heroBlock p {
+  color: #fff;
+}
+.container .heroBlock header nav {
+  margin: 10px;
+  display: flex;
+  flex-flow: row;
+  justify-content: space-around;
+}
+.container .heroBlock header nav a {
+  text-decoration: none;
+  color: white;
+  padding: 10px;
+  border-bottom: 2px solid white;
+}
+.container .heroBlock header nav a:hover {
+  transition-delay: 0.5ms;
+  border-bottom: 2px solid #00b8fe;
+  color: #00b8fe;
+}
+.container .heroBlock .bio {
+  text-align: center;
+  width: 70%;
+  margin: 0 auto;
+  padding: 15px;
+}
+.container .heroBlock .bio h1,
+.container .heroBlock .bio p {
+  text-shadow: 1px 2px 1px #000;
+}
+.container .projects {
+  padding: 10px;
+}
+.container .projects div {
+  margin: 25px 0;
+}
+.container .projects div h2 {
+  line-height: 1.3em;
+}
