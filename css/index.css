@@ -171,7 +171,7 @@ body {
 .container a {
   color: #00b8fe;
 }
-.container .heroImg {
+.container .heroBlock {
   background-image: url("/img/hero.png"), linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
   background-blend-mode: overlay;
   background-size: cover;
@@ -181,18 +181,35 @@ body {
   flex-flow: column;
   justify-content: space-between;
 }
-.container .heroImg h1,
-.container .heroImg p {
+.container .heroBlock h1,
+.container .heroBlock p {
   color: #fff;
 }
-.container .heroImg .bio {
+.container .heroBlock header nav {
+  margin: 10px;
+  display: flex;
+  flex-flow: row;
+  justify-content: space-around;
+}
+.container .heroBlock header nav a {
+  text-decoration: none;
+  color: white;
+  padding: 10px;
+  border: 1px solid white;
+}
+.container .heroBlock header nav a:hover {
+  transition-delay: 0.5ms;
+  background-color: #00b8fe;
+  color: #000;
+}
+.container .heroBlock .bio {
   text-align: center;
   width: 70%;
   margin: 0 auto;
   padding: 15px;
 }
-.container .heroImg .bio h1,
-.container .heroImg .bio p {
+.container .heroBlock .bio h1,
+.container .heroBlock .bio p {
   text-shadow: 1px 2px 1px #000;
 }
 .container .projects {
