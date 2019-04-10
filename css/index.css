@@ -139,7 +139,8 @@ body {
   justify-content: center;
 }
 .container {
-  width: 900px;
+  width: 1100px;
+  min-height: 515px;
   background-color: #fff;
   display: flex;
   flex-flow: row;
@@ -154,7 +155,7 @@ body {
   color: #000;
 }
 .container h1 {
-  font-size: 2em;
+  font-size: 1.5em;
 }
 .container h2 {
   font-size: 1.3em;
@@ -166,6 +167,9 @@ body {
 .container section {
   width: 50%;
   margin: 0 auto;
+}
+.container a {
+  color: #00b8fe;
 }
 .container .heroImg {
   background-image: url("/img/hero.png"), linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
@@ -180,6 +184,16 @@ body {
 .container .heroImg h1,
 .container .heroImg p {
   color: #fff;
+}
+.container .heroImg .bio {
+  text-align: center;
+  width: 70%;
+  margin: 0 auto;
+  padding: 15px;
+}
+.container .heroImg .bio h1,
+.container .heroImg .bio p {
+  text-shadow: 1px 2px 1px #000;
 }
 .container .projects {
   padding: 10px;
