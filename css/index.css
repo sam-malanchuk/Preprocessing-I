@@ -203,7 +203,7 @@ body {
   color: #00b8fe;
 }
 .container .heroBlock {
-  background-image: url("/img/hero.png"), linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+  background-image: url("../img/hero.png"), linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
   background-blend-mode: overlay;
   background-size: cover;
   background-position: center;
